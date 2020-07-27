@@ -8,10 +8,24 @@ function Test(props: any) {
             type: ('category' as 'category'),
             data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
         },
+        legend: {
+            left: 0,
+            selector: true,
+            textStyle: {
+                fontSize: 20
+            },
+            data: [
+                {
+                    name: '显示',
+                    // icon: 'circle'
+                }
+            ]
+        },
         yAxis: {
             type: ('value' as 'value')
         },
         series: [{
+            name: '显示',
             data: [120, 200, 150, 80, 70, 110, 130],
             type: 'bar',
             showBackground: true,
@@ -25,6 +39,7 @@ function Test(props: any) {
         <div>
             <Charts 
             id="chart1" 
+            style={{width: '100%', height: '400px'}}
             option={option} 
             />
         </div>
