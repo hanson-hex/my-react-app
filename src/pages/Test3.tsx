@@ -3,7 +3,7 @@ import ReactEcharts from "echarts-for-react";
 import "echarts/lib/component/tooltip";
 import _ from 'lodash';
 
-function Test(props: any) {
+function Test3(props: any) {
     const dataList = [
         {
             chatCount: 1,
@@ -73,16 +73,12 @@ function Test(props: any) {
       extraCssText: "box-shadow:0px 1px 3px rgba(63,63,68,0.15);",
       backgroundColor: "#fff",
     },
-
     grid: {
-      left: 45,
-      right: 45 + 40,
-      top: 35,
-      bottom: 58
+      top: 50,
+      left: 50,
+      right: 50,
+      bottom: 50
     },
-    // grid: {
-    //   right: "50%"
-    // },
     xAxis: {
       type: "category" as "category",
       axisTick: {
@@ -107,7 +103,7 @@ function Test(props: any) {
           show: false, // 不显示刻度
         },
         axisLine: {
-          show: false,
+          show: false,  // 不显示线
         },
         axisLabel: {
           color: "#637381", // y axis color
@@ -268,4 +264,4 @@ function Test(props: any) {
   );
 }
 
-export default Test;
+export default Test3;
